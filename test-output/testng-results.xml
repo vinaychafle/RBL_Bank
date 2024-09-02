@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="14" passed="12" failed="1" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-08-14T11:25:50 IST" name="Default suite" finished-at="2024-08-14T11:33:15 IST" duration-ms="445006">
+    <groups>
+    </groups>
+    <test started-at="2024-08-14T11:25:50 IST" name="Default test" finished-at="2024-08-14T11:33:15 IST" duration-ms="445006">
+      <class name="Client_Project.LoanAppCreation">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Client_Project.LoanAppCreation@4d154ccd]" started-at="2024-08-14T11:25:37 IST" name="launchApplication" finished-at="2024-08-14T11:25:50 IST" duration-ms="13469" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="LoginPage(java.lang.String,java.lang.String)[pri:1, instance:Client_Project.LoanAppCreation@4d154ccd]" started-at="2024-08-14T11:25:52 IST" name="LoginPage" data-provider="getLoginData" finished-at="2024-08-14T11:25:57 IST" duration-ms="5377" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[unnati.mokal@rblbank.com.uat]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Welcome#123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginPage -->
+        <test-method signature="LeadPageAccess()[pri:2, instance:Client_Project.LoanAppCreation@4d154ccd]" started-at="2024-08-14T11:25:57 IST" name="LeadPageAccess" finished-at="2024-08-14T11:26:00 IST" depends-on-methods="Client_Project.LoanAppCreation.LoginPage" duration-ms="3046" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LeadPageAccess -->
+        <test-method signature="LeadFillDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:Client_Project.LoanAppCreation@4d154ccd]" started-at="2024-08-14T11:26:00 IST" name="LeadFillDetails" data-provider="getLeadData" finished-at="2024-08-14T11:26:04 IST" depends-on-methods="Client_Project.LoanAppCreation.LeadPageAccess" duration-ms="3661" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Two Wheeler Loan]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PilotRun]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1748397770]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[400064]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Dealer]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Interested]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LeadFillDetails -->
+        <test-method signature="ConvertToApplication()[pri:4, instance:Client_Project.LoanAppCreation@4d154ccd]" started-at="2024-08-14T11:26:04 IST" name="ConvertToApplication" finished-at="2024-08-14T11:26:06 IST" depends-on-methods="Client_Project.LoanAppCreation.LeadFillDetails" duration-ms="2039" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ConvertToApplication -->
+        <test-method signature="CreateApp1(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:5, instance:Client_Project.LoanAppCreation@4d154ccd]" started-at="2024-08-14T11:26:06 IST" name="CreateApp1" data-provider="ApplicationData1" finished-at="2024-08-14T11:26:29 IST" depends-on-methods="Client_Project.LoanAppCreation.ConvertToApplication" duration-ms="22441" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DEASINGA]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[100000]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[36]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1000]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateApp1 -->
+        <test-method signature="CreateApp2(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:6, instance:Client_Project.LoanAppCreation@4d154ccd]" started-at="2024-08-14T11:26:29 IST" name="CreateApp2" data-provider="ApplicationData2" finished-at="2024-08-14T11:27:40 IST" depends-on-methods="Client_Project.LoanAppCreation.CreateApp1" duration-ms="71460" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Salaried]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Individual Cash salaried]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Mr.]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[22-Jul-2000]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateApp2 -->
+        <test-method signature="CreateApp3()[pri:7, instance:Client_Project.LoanAppCreation@4d154ccd]" started-at="2024-08-14T11:27:40 IST" name="CreateApp3" finished-at="2024-08-14T11:28:22 IST" depends-on-methods="Client_Project.LoanAppCreation.CreateApp2" duration-ms="41624" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateApp3 -->
+        <test-method signature="CreateApp4(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:8, instance:Client_Project.LoanAppCreation@4d154ccd]" started-at="2024-08-14T11:28:22 IST" name="CreateApp4" data-provider="ApplicationData4" finished-at="2024-08-14T11:30:26 IST" depends-on-methods="Client_Project.LoanAppCreation.CreateApp3" duration-ms="123877" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Voter]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[TWJ4467300]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Married]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[abc]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[xyz]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateApp4 -->
+        <test-method signature="ParmanentAdd(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:9, instance:Client_Project.LoanAppCreation@4d154ccd]" started-at="2024-08-14T11:30:26 IST" name="ParmanentAdd" data-provider="KYCaddress" finished-at="2024-08-14T11:31:28 IST" depends-on-methods="Client_Project.LoanAppCreation.CreateApp4" duration-ms="62533" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Voter]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[addone]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[addtwo]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[410206]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Same as Permanent Address]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[baddone]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[baddtwo]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[LandMark]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[410208]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Same as Current Address]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ParmanentAdd -->
+        <test-method signature="SocioEconomicDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:10, instance:Client_Project.LoanAppCreation@4d154ccd]" started-at="2024-08-14T11:31:29 IST" name="SocioEconomicDetails" data-provider="ecoDetails" finished-at="2024-08-14T11:31:53 IST" depends-on-methods="Client_Project.LoanAppCreation.ParmanentAdd" duration-ms="24593" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Hindu]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[OBC]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Graduate]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Salaried]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Private Ltd]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Private]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[31_311-Private Banks]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Owned]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Greater than 10 Years]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[30]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[60]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[100000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[10-50 lakh]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[TestOne]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[01/01/2008]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[10-25 Lakh]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SocioEconomicDetails -->
+        <test-method signature="AssetDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:11, instance:Client_Project.LoanAppCreation@4d154ccd]" started-at="2024-08-14T11:31:53 IST" name="AssetDetails" data-provider="AssetDetails" finished-at="2024-08-14T11:32:23 IST" depends-on-methods="Client_Project.LoanAppCreation.SocioEconomicDetails" duration-ms="29560" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Motorcycle]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Retro Factory]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[100000]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10000]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[1000]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Hunter 350]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AssetDetails -->
+        <test-method signature="Flowpage()[pri:12, instance:Client_Project.LoanAppCreation@4d154ccd]" started-at="2024-08-14T11:32:23 IST" name="Flowpage" finished-at="2024-08-14T11:32:40 IST" depends-on-methods="Client_Project.LoanAppCreation.AssetDetails" duration-ms="17132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Flowpage -->
+        <test-method signature="LoanEligibility()[pri:13, instance:Client_Project.LoanAppCreation@4d154ccd]" started-at="2024-08-14T11:32:40 IST" name="LoanEligibility" finished-at="2024-08-14T11:33:15 IST" depends-on-methods="Client_Project.LoanAppCreation.Flowpage" duration-ms="35128" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//span[@class='slds-radio_faux'])[1]"}
+  (Session info: chrome=127.0.6533.101)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3d43f91d556d05cc56249f2cee450bbb, findElement {using=xpath, value=(//span[@class='slds-radio_faux'])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.101, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\ANKUSH~1.SIN\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58497}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58497/devtoo..., se:cdpVersion: 127.0.6533.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3d43f91d556d05cc56249f2cee450bbb]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//span[@class='slds-radio_faux'])[1]"}
+  (Session info: chrome=127.0.6533.101)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3d43f91d556d05cc56249f2cee450bbb, findElement {using=xpath, value=(//span[@class='slds-radio_faux'])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.101, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\ANKUSH~1.SIN\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58497}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58497/devtoo..., se:cdpVersion: 127.0.6533.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3d43f91d556d05cc56249f2cee450bbb
+at jdk.internal.reflect.GeneratedConstructorAccessor40.newInstance(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
+at PageObjects.LoanEligibilityAndOffer.processLoanEligibilityAndOffer(LoanEligibilityAndOffer.java:51)
+at Client_Project.LoanAppCreation.LoanEligibility(LoanAppCreation.java:132)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoanEligibility -->
+        <test-method signature="BankVerification()[pri:14, instance:Client_Project.LoanAppCreation@4d154ccd]" started-at="2024-08-14T11:33:15 IST" name="BankVerification" finished-at="2024-08-14T11:33:15 IST" depends-on-methods="Client_Project.LoanAppCreation.LoanEligibility" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method LoanAppCreation.BankVerification()[pri:14, instance:Client_Project.LoanAppCreation@4d154ccd] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method LoanAppCreation.BankVerification()[pri:14, instance:Client_Project.LoanAppCreation@4d154ccd] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BankVerification -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Client_Project.LoanAppCreation@4d154ccd]" started-at="2024-08-14T11:33:16 IST" name="tearDown" finished-at="2024-08-14T11:33:17 IST" duration-ms="705" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Client_Project.LoanAppCreation -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
